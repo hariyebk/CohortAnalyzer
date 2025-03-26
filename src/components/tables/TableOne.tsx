@@ -6,6 +6,7 @@ TableCell,
 TableHeader,
 TableRow,
 } from "../ui/table";
+import Pagination from "./Pagination";
 
 interface Order {
     id: number;
@@ -79,7 +80,7 @@ export default function TableOne() {
 return (
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-white/[0.05] dark:bg-white/[0.03]">
     <div className="max-w-full max-md:overflow-x-auto">
-        <div className="min-w-[1102px]">
+        <div>
             <Table>
                 {/* Table Header */}
                 <TableHeader className="border-b border-gray-100 dark:border-white/[0.05]">
@@ -104,7 +105,7 @@ return (
                     </TableCell>
                     <TableCell
                     isHeader
-                    className="px-5 py-3 font-medium text-gray-500 text-start max-sm:text-theme-xs sm:text-base dark:text-gray-400"
+                    className="px-5 py-3 font-medium text-gray-500 text-start max-sm:text-theme-xs sm:text-base dark:text-gray-400 max-w-[170px]"
                     >
                     Weighted Average Revenue / User
                     </TableCell>
@@ -124,7 +125,7 @@ return (
                     <TableCell className="px-8 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
                         <span> {data.total_revenue} </span>
                     </TableCell>
-                    <TableCell className="pl-10 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
+                    <TableCell className="px-8 py-3 text-gray-500 text-center text-theme-sm dark:text-gray-400">
                         <span> {data.weighted_average_revenue_per_user} </span>
                     </TableCell>
                     </TableRow>
