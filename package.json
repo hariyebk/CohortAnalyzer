@@ -1,5 +1,5 @@
 {
-  "name": "Listen",
+  "name": "listen",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,9 +13,9 @@
     "@react-jvectormap/world": "^1.1.2",
     "apexcharts": "^4.3.0",
     "next": "15.2.3",
-    "react": "^19.0.0",
+    "react": "^18.3.1",
     "react-apexcharts": "^1.7.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-svg": "^16.3.0",
     "tailwind-merge": "^2.6.0"
